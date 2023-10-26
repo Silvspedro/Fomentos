@@ -1,0 +1,281 @@
+html body {
+    padding: 0;
+    margin: 0;
+    background-color: #F1F0EE;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+/* Propriedades para definirem o posicionamento dos itens do cabeçalho */
+.lista {
+    list-style: none;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    padding: 0;
+}
+
+
+.lista a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.lista li {
+    margin: 0 15px;
+}
+
+/* Essas propriedades abaixo definem o estilo dos botões do cabeçalho. */
+.lista button {
+    background-color: #628C4F;
+    color: black;
+    border-radius: 10em;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.lista button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+
+.lista button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+.barradenavegacao {
+    position: relative;
+    top: 20px;
+}
+
+/* Essas propriedades definem a cor e o tamamnho do cabeçalho. */
+header {
+    background-color: #628C4F;
+    height: 80px;
+    margin: 0;
+}
+
+/* Essas propriedades definem o tamanho e a posição da logo do site no cabeçalho. */
+header img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+/* Essas propriedades definem o estilo e posicionamento do nome 'Fomentos' */
+.fomentos {
+    position: absolute;
+    left: 17%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    top: 15px;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.carrinho {
+    color: black;
+    margin-right: 1rem;
+}
+
+.carrinho h5 {
+    font-family: Kotta One;
+    font-size: 24px;
+}
+
+.produto {
+    width: 93px;
+    height: 64px;
+    margin-right: 10px;
+}
+
+.flexrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.flexend {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descricao {
+    font-family: Kotta One;
+    font-size: 16px;
+}
+
+.lixeira {
+    color: black;
+}
+
+.separacao {
+    width: 50px;
+    margin-right: 70px;
+}
+
+.separacaosubtotal {
+    width: 80px;
+    margin-right: 50px;
+}
+
+.subtotal {
+    margin-right: 50px;
+    font-family: Khula;
+    font-size: 20px;
+}
+
+.botaoFinalizar {
+    background-color: #628C4F;
+    margin-right: 100px;
+    margin-top: 10px
+}
+
+.logo {
+    mix-blend-mode: screen;
+}
+
+.carrinhoTexto {
+    font-family: Kotta One;
+}
+
+.limparCarrinho {
+    color: #649552;
+    text-decoration: none;
+    font-family: Khula;
+}
+
+.limparCarrinho:hover {
+    color: #649552;
+    text-decoration: none;
+    font-family: Khula;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+#quem-somos {
+    padding: 15px;
+}
+
+#quem-somos h1 {
+    margin: 25px;
+    color: #fd8a24;
+    text-align: center;
+}
+
+#quem-somos h2 {
+    color: #fd8a24;
+    padding: 10px;
+}
+
+#quem-somos h3 {
+    margin: 25px;
+    color: #ebaa71;
+    text-align: center;
+}
+
+#btn-retornar-quem-somos {
+    margin: 10px;
+}
+
+#btn-retornar-quem-somos a {
+    color: #fff;
+    border-bottom: none;
+
+}
+
+.trabalhe-conosco {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+
+
+}
+
+.trabalhe-conosco input {
+    margin: 10px;
+    width: 500px;
+    border: 1px solid #fd8a24;
+
+}
+
+
+/* Estilo Rodapé */
+footer {
+    width: 100%;
+    height: 30%;
+    background-color: #649553;
+}
+
+.logo-rodape {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-rodape {
+    width: 70%;
+    height: 100px;
+    margin: 0 0 0 230px;
+
+}
+
+.menu-rodape li {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    font-size: 22px;
+}
+
+.menu-rodape a {
+    color: #222222;
+}
+
+.menu-rodape a:hover {
+    color: #fff;
+    transition: 0.3s all;
+}
+
+.informacoes-finais {
+    padding: 10px;
+}
+
+.informacoes-finais p {
+    text-align: center;
+}
+
+.informacoes-finais img {
+    text-align: center;
+}
+
+/*Fim Estilo Rodapé */
+
+
+.lista-rodape {
+    position: relative;
+    right: 10%;
+} 

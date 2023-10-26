@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Tela de Login</title>
+
+	<link rel="stylesheet" href="css/tela-de-login.css">
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="website icon" type="jpg" href="imgs/logofomentos.jpg">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+	<header>
+		<!-- Conteúdo do cabeçalho -->
+		<a href="pagina_inicial - fomentos.html"><img src="imgs/logofomentos.jpg" alt=""></a>
+		<h1 class="fomentos">FOMENTOS</h1>
+
+		<nav class="barradenavegacao">
+			<ul class="lista">
+				<li><a href="carrinho.html"><button>Carrinho</button></a></li>
+				<li><a href="add-anuncio.html"><button>Inserir anúncio</button></a></li>
+				<li><a href="Tela-de-cadastro.html"><button>Cadastrar</button></a></li>
+				<li><a href="tela-de-login.html"><button>Entrar</button></a></li>
+				<li><a href="perfil.html"><button>Perfil</button></a></li>
+				<li><a href="favoritos.html"><button>Favoritos</button></a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<div class="box">
+
+
+		<img src="imgs/logofomentos.jpg" width="100" height="90" style="border-radius: 20px;"
+			alt="Imagem nao encontrada">
+		<br><br><br>
+		<form action="Logar" method="get">
+			<div class="inputBox">
+				<input type="text" name="email" id="email" class="inputUser" required>
+				<label for="email" class="labelInput"> Email: </label>
+			</div>
+			<br>
+			<div class="inputBox">
+				<input type="password" name="senha" id="senha" class="inputUser" required>
+				<label for="senha" class="labelInput"> Senha: </label>
+			</div>
+			<p>
+
+			</p>
+			<div class="link">
+				<a href="#">Esqueceu sua senha? </a>
+			</div>
+			<br>
+
+			<div class="g-recaptcha" data-sitekey="your_site_key"> </div>
+
+			<br><br><br><br>
+
+			<input type="submit" name="submit" id="submit" value="Entrar">
+		</form>
+		<div class="link">
+			<p> Não tem uma conta? <a href="Tela-de-cadastro.html">Cadastre-se</a></p>
+		</div>
+	</div>
+
+
+
+	<footer>
+
+		<div class="logo-rodape">
+			<a href="Pagina-inicial.html">
+				<img src="imgs/logo2-preto.jpg" alt="">
+			</a>
+		</div>
+		<div class="menu-rodape">
+			<ul>
+
+				<a href="quem-somos.html">
+					<li>Quem somos</li>
+				</a>
+				<a href="politicas-pricacidade.html">
+					<li>Política de privacidade</li>
+				</a>
+				<a href="termos-uso.html">
+					<li>Termos de uso</li>
+				</a>
+
+				<a href="trabalhe-conosco.html">
+					<li>Trabalhe Conosco</li>
+				</a>
+			</ul>
+
+		</div>
+		<div class="informacoes-finais">
+
+			<!--  <img src="img/meios-pagamento-rodape-sem-fundo.png" alt="Meios de pagamento aceitos pelo site"> -->
+
+			<p>FOMENTOS LTDA | CNPJ: 00.001.987/0006-54 </p>
+
+			<P>SIGA Área Especial para Indústria Lote 2/3, Sce St. Leste Industrial - Gama, Brasília - DF, CEP
+				72445-020
+			</p>
+
+			<P>Copyright © 2023 Fomentos. Todos os direitos reservados</p>
+		</div>
+	</footer>
+
+
+
+</body>
+
+</html>

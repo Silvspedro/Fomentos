@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo-add-anuncio.css">
+    <title>Adicionar anúncio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="website icon" type="jpg" href="imgs/logofomentos.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+</style>
+</head>
+
+<body>
+    <header> 
+        <!-- Conteúdo do cabeçalho -->
+        <a href="pagina_inicial - fomentos.html"><img src="imgs/logofomentos.jpg" alt=""></a>
+        <h1 class="fomentos">FOMENTOS</h1>
+
+        <nav class="barradenavegacao">
+            <ul class="lista">
+                <li><a href="carrinho.html"><button>Carrinho</button></a></li>
+                <li><a href="add-anuncio.html"><button>Inserir anúncio</button></a></li>
+                <li><a href="Tela-de-cadastro.html"><button>Cadastrar</button></a></li>
+                <li><a href="tela-de-login.html"><button>Entrar</button></a></li>
+                <li><a href="perfil.html"><button>Perfil</button></a></li>
+                <li><a href="favoritos.html"><button>Favoritos</button></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container my-3">
+        <!-- Quebra de linha acima -->
+        <div class="row">
+            <div class="col">
+                <h6>Titulo</h6>
+                <input type="text" class="form-control" placeholder="Titulo" aria-label="Titulo">
+            </div>
+            <div class="col">
+                <h6>Subtitulo</h6>
+                <input type="text" class="form-control" placeholder="Subtitulo" aria-label="Subtitulo">
+            </div>
+        </div>
+        <!-- Quebra de linha abaixo -->
+    </div>
+
+
+    <div class="container">
+        <h5 class="mt-4">Adicionar imagens</h5>
+        <h6 class="text-muted">Máximo de cinco fotos</h6>
+    </div>
+
+    <div class="container mt-3">
+        <a href="oi.html">
+            <img src="imgs/add-imagem.jpeg" class="img-fluid" alt="Adicionar Imagem" width="150px">
+        </a>
+    </div>
+
+
+    <!-- Quebra de linha acima -->
+    <div class="container my-3">
+        <div class="row">
+            <!-- Coluna 1 - Preço -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="price">Preço</label>
+                    <input type="text" class="form-control" id="price" placeholder="Preço" aria-label="Preço">
+                </div>
+            </div>
+
+            <!-- Coluna 2 - Data de Colheita -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="harvestDate">Data de Colheita</label>
+                    <input type="text" class="form-control" id="harvestDate" placeholder="Data de colheita"
+                        aria-label="Data de colheita">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- Coluna 3 - Descrição do Produto -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="productDescription">Descrição do Produto</label>
+                    <textarea class="form-control" id="productDescription" rows="4"
+                        placeholder="Digite a descrição do produto"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="form-group">
+            <label for="paymentMethods">Formas de Pagamento</label>
+            <ul class="list-unstyled">
+                <li class="form-check mx-3">
+                    <input class="form-check-input larger-checkbox" type="checkbox" id="debitCard" value="debitCard">
+                    <label class="form-check-label larger-label" for="debitCard">Débito</label>
+                </li>
+                <li class="form-check mx-3">
+                    <input class="form-check-input larger-checkbox" type="checkbox" id="creditCard" value="creditCard">
+                    <label class="form-check-label larger-label" for="creditCard">Cartão de Crédito</label>
+                </li>
+                <li class="form-check mx-3">
+                    <input class="form-check-input larger-checkbox" type="checkbox" id="pix" value="pix">
+                    <label class="form-check-label larger-label" for="pix">PIX</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h5>Localização</h5>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="cep">Cep</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="municipio">Município</label>
+                    <input type="text" class="form-control" id="municipio" placeholder="Digite o Município">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Digite o Bairro">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flamengo">
+        <form action="página_pós_login.html" method="get">
+        <button type="button" class="vasco">Visualizar</button>
+        
+        
+        <button type="button" class="saopaulo">Anunciar</button>
+        </form>
+    </div>
+
+    <footer> 
+
+        <div class="logo-rodape">
+          <a href="Pagina-inicial.html">
+            <img src="img/logo2-preto.jpg" alt="">
+          </a>
+        </div>
+        <div class="menu-rodape">
+          <ul>
+    
+            <a href="quem-somos.html">
+              <li>Quem somos</li>
+            </a>
+            <a href="politicas-pricacidade.html">
+              <li>Política de privacidade</li>
+            </a>
+            <a href="termos-uso.html">
+              <li>Termos de uso</li>
+            </a>
+    
+            <a href="trabalhe-conosco.html">
+              <li>Trabalhe Conosco</li>
+            </a>
+          </ul>
+    
+        </div>
+        <div class="informacoes-finais">
+    
+          <!--  <img src="img/meios-pagamento-rodape-sem-fundo.png" alt="Meios de pagamento aceitos pelo site"> -->
+    
+          <p>FOMENTOS LTDA | CNPJ: 00.001.987/0006-54 </p>
+    
+          <P>SIGA Área Especial para Indústria Lote 2/3, Sce St. Leste Industrial - Gama, Brasília - DF, CEP 72445-020
+          </p>
+    
+          <P>Copyright © 2023 Fomentos. Todos os direitos reservados</p>
+        </div>
+      </footer>
+
+
+</body>
+
+</html>

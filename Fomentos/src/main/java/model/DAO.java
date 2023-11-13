@@ -71,8 +71,9 @@ public class DAO {
 				String email_usuario = rs.getString(3);
 				String senha_usuario = rs.getString(4);
 				String cpf_usuario = rs.getString(5);
+				String cpf_compra = rs.getString(5);
 				// populando o ArrayList
-				dados_usuario.add(new JavaBeans(id_usuario, nome_usuario, email_usuario, senha_usuario,cpf_usuario));
+				dados_usuario.add(new JavaBeans(id_usuario, nome_usuario, email_usuario, senha_usuario,cpf_usuario,cpf_compra));
 				// Encerrar a conexão com o banco.
 				
 			}

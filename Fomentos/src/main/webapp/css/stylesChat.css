@@ -137,7 +137,7 @@ nav a {
 .comentario {
     font-family: 'Kotta One';
     size: 16px;
-    background: url(../img/caixa.png), lightgray 50% / cover no-repeat;
+    background: lightgray 50% / cover no-repeat;
     width: 306px;
     height: 65px;
     border-radius: 15px;

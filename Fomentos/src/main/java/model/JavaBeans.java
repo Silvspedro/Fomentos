@@ -7,19 +7,21 @@ public class JavaBeans {
     private String confirSenha;
     private String nome_usuario;
     private String cpf_usuario;
+    private String cpf_compra;
     
 
     public JavaBeans() {
         super();
     }
 
-    public JavaBeans(String ID_USUARIO, String NOME_USUARIO, String EMAIL_USUARIO, String SENHA_USUARIO,String CPF_USUARIO) {
+    public JavaBeans(String ID_USUARIO, String NOME_USUARIO, String EMAIL_USUARIO, String SENHA_USUARIO,String CPF_USUARIO,String CPF_COMPRA ) {
         super();
         this.id_usuario = ID_USUARIO;
         this.nome_usuario = NOME_USUARIO;
         this.email_usuario = EMAIL_USUARIO;
         this.senha_usuario = SENHA_USUARIO;
         this.cpf_usuario = CPF_USUARIO;
+        this.cpf_compra = CPF_COMPRA;
     }
 
     public String getId_usuario() {
@@ -55,8 +57,6 @@ public class JavaBeans {
             throw new IllegalArgumentException("O campo senha_usuario é obrigatório");
         }
     }
-    
-    
 
     public String getConfirSenha() {
 		return confirSenha;
@@ -89,7 +89,16 @@ public class JavaBeans {
 	public void setCpf_usuario(String cpf_usuario) {
 		this.cpf_usuario = cpf_usuario;
 	}
-    
+
+	public String getCpf_compra() {
+		return cpf_compra;
+	}
+
+	public void setCpf_compra(String cpf_compra) {
+		this.cpf_compra = cpf_compra;
+	}
+   
+	
     
 }
 

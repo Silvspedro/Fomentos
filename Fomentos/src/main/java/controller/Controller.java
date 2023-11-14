@@ -15,16 +15,19 @@ import model.JavaBeans;
 /**
  * Servlet implementation class ValidacaoLogin
  */
-@WebServlet(urlPatterns = { "/Logar", "/insert", "/validar" })
+@WebServlet(urlPatterns = { "/Logar", "/insert", "/validar","/chatlogado","/carrinhologado"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	
 	DAO dao = new DAO();
 	JavaBeans usuario = new JavaBeans();
 
 	public Controller() {
 		super();
 	}
-
+	
+	boolean logado = false;
+	
 	// Metodo de decisão e direcionamento para prosseguimento seguinte
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -37,7 +40,11 @@ public class Controller extends HttpServlet {
 		} else if (action.equals("/insert")) {
 			novoUsuario(request, response);
 		} else if (action.equals("/validar")) {
-			validarCPF(request, response);
+			validarCPF(request, response); 
+		} else if (action.equals("/chatlogado")) {
+			validarchat(request, response);
+		} else if (action.equals("/carrinhologado")) {
+			validarcarrinho(request, response);
 		}
 	}
 
@@ -88,8 +95,10 @@ public class Controller extends HttpServlet {
 		// Redirecionamento para pagina devida
 		if (emailDigitado.equals(emailValidado) && senhaDigitada.equals(senhaValidada)) {
 			response.sendRedirect("pagina_pos_login.html");
+			logado = true;
 		} else {
 			response.sendRedirect("termos-uso.html");
+			logado = false;
 		}
 	}
 
@@ -151,6 +160,25 @@ public class Controller extends HttpServlet {
 	private boolean validarCPF(String validandocpf) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+	
+	protected void validarchat(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+		if (logado == true) {
+			response.sendRedirect("Chat.html");			
+		} else if (logado == false) {
+			response.sendRedirect("tela-de-login.html");
+		}
+		
+	}
+	protected void validarcarrinho(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+		if (logado = true) {
+			response.sendRedirect("carrinho.html");			
+		} else if (logado = false) {
+			response.sendRedirect("tela-de-login.html");
+		}
+		
 	}
 
 }

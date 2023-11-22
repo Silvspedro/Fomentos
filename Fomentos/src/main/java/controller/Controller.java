@@ -65,7 +65,7 @@ public class Controller extends HttpServlet {
 		// Invocar o método inserirUsuario passando o objeto contato.
 		dao.inserirUsuario(usuario);
 		// Redirecionar para o documento login.html
-		response.sendRedirect("tela-de-login.html");
+		response.sendRedirect("Login.html");
 	}
 
 	// Metodo para validar login do Usuario
@@ -94,10 +94,10 @@ public class Controller extends HttpServlet {
 		}
 		// Redirecionamento para pagina devida
 		if (emailDigitado.equals(emailValidado) && senhaDigitada.equals(senhaValidada)) {
-			response.sendRedirect("pagina_pos_login.html");
+			response.sendRedirect("Pos_login.html");
 			logado = true;
 		} else {
-			response.sendRedirect("termos-uso.html");
+			response.sendRedirect("Termos-uso.html");
 			logado = false;
 		}
 	}
@@ -167,16 +167,16 @@ public class Controller extends HttpServlet {
 		if (logado == true) {
 			response.sendRedirect("Chat.html");			
 		} else if (logado == false) {
-			response.sendRedirect("tela-de-login.html");
+			response.sendRedirect("Login.html");
 		}
 		
 	}
 	protected void validarcarrinho(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
-		if (logado = true) {
-			response.sendRedirect("carrinho.html");			
-		} else if (logado = false) {
-			response.sendRedirect("tela-de-login.html");
+		if (logado == true) {
+			response.sendRedirect("Carrinho.html");			
+		} else if (logado == false) {
+			response.sendRedirect("Login.html");
 		}
 		
 	}

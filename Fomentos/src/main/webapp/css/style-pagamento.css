@@ -94,6 +94,9 @@ body {
     width: 100%;
     background-color: #F1F0EE;
 }
+.btn{
+	height: 80px;
+}
 
 .form {
     display: flex;
@@ -231,53 +234,53 @@ body {
 
 /* Estilo Rodapé */
 footer {
-    width: 100%;
-    height: 30%;
-    background-color: #628C4F;
-}
-
-.logo-rodape {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100%;
+	height: 30%;
+	background-color: #649553;
 }
 
 .menu-rodape {
-    width: 70%;
-    height: 100px;
-    margin: 0 0 0 330px;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/*
-.menu-rodape ul{
-    display: inline-block;
-    width: 100%;
-    height: 100px; 
-
-}*/
 .menu-rodape li {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-    font-size: 22px;
+	display: inline-block;
+	text-align: center;
+	padding: 15px;
+	font-size: 22px;
 }
 
-/* Estilo pagina de pagamentos */
+.menu-rodape a {
+	color: #222222;
+}
 
-/*.finalizar-compra {
+.menu-rodape a:hover {
+	color: #fff;
+	transition: 0.3s all;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background-color: #fd8a24;
-    color: #232323;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 25px
-}*/
+.informacoes-finais {
+	padding: 10px;
+}
+
+.informacoes-finais p {
+	text-align: center;
+}
+
+.informacoes-finais img {
+	text-align: center;
+}
+
+.lista-rodape {
+	position: relative;
+    right: 1%;
+}
+
+/*Fim Estilo Rodapé */
+
+
 .finalizar-compra{
     display: flex;
     justify-content: center;
@@ -311,7 +314,7 @@ footer {
     margin: 0 0 70px 0;
 }
 #controle-login form{
-    height: 400px;
+    
     margin-top: 80px;
 }
 #controle-login input{
@@ -325,6 +328,11 @@ footer {
 #controle-login a:hover{
     color: #fd8a24;
 }
+
+#confirmado{
+	margin-bottom: -50px !important;
+}
+/* Estilo pagina de pagamentos */
 .check-pagamento{
     margin: 0 0 10px 28%;
     width: 300px;
@@ -336,28 +344,6 @@ footer {
 #title-confirm{
     margin: 0 0 5px 0;
 }
-.menu-rodape a {
-    color: #222222;
-}
-
-.menu-rodape a:hover {
-    color: #fff;
-    transition: 0.3s all;
-}
-
-.informacoes-finais {
-    padding: 10px;
-}
-
-.informacoes-finais p {
-    text-align: center;
-}
-
-.informacoes-finais img {
-    text-align: center;
-}
-
-/*Fim Estilo Rodapé */
 
 .container{
     background-color: #F1F0EE;
@@ -381,6 +367,6 @@ footer {
 .btn-comum:hover{
  
     background-color: #628C4F;
-    color: #222222;
+    color: #fff;
     transition: 0.3s all;
 }

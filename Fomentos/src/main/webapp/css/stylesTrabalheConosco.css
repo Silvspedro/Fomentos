@@ -1,78 +1,33 @@
-.container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: 'Times New Roman', Times, serif;
+.w100{
+    width:100%;
 }
 
-.favorite {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    border: solid 1px #D2CFCF;
-    border-right: 0px;
-    border-left: 0px;
-    padding: 1rem;
-    justify-content: space-between;
+.historia{
+    width: 100%;
+    height: 100px;
+    margin-bottom:15px;
+    font-family: 'Kotta One';
+    text-align: center;
+    outline: 0;
+    border: 0 none;
 }
 
-.a24{
-    font-family: Kotta One; 
-    font-size: 24px;
+.quadro{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: fit-content;
+    height: fit-content;
+    border: solid 30px #E4E3E3;
+    border-radius: 15px;
+    background: #E4E3E3;
 }
 
-.a32{
-    font-family: Koulen; 
-    font-size: 32px;
-}
-
-.a16{
-    font-family: Kotta One; 
-    font-size: 16px;
-}
-
-.flexrow{
-    display: flex; 
-    flex-direction: row;
-}
-
-.flexcolumn{
-    display: flex; 
-    flex-direction: column;
-}
-
-.ordem{
-    display: flex; 
-    justify-content: space-between;
-}
-
-.produtos{
-    width: 188px; 
-    height: 143px;
-    margin-right: 1rem;
-}
-
-.favoriteImg{
-    margin-right:1rem;
-}
-
-#lixeira{
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
-
-.favorite a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-body {
+html body {
     padding: 0;
     margin: 0;
     background-color: #F1F0EE;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -85,7 +40,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 .lista a {
     text-decoration: none;
@@ -109,6 +63,10 @@ body {
     transition: all 0.3s ease-in-out;
     border: 1px solid black;
     box-shadow: 0 0 0 0 black;
+}
+
+form{
+    width: 540px;
 }
 
 .lista button:hover {
@@ -161,12 +119,40 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
-.p{
-    font-size: 24px; 
-    font-family: Kotta One;
+
+input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Kotta One';
+    text-align: center;
+    size: 16px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0 none;
+    box-sizing: border-box;
+    padding: 0;
+    height: 40px;
 }
 
-/*RODAPÉ*/
+.flexrow{
+    display: flex; 
+    flex-direction: row;
+}
+
+.flexcolumn{
+    display: flex; 
+    flex-direction: column;
+}
+
+.center{
+    align-items: center
+}
+
+.afastar{
+    size: 13px;
+    text-decoration: none;
+    padding-left: 30px;
+}
 
 #quem-somos {
     padding: 15px;
@@ -214,6 +200,30 @@ nav a {
 
 }
 
+.botao {
+    margin-left: 10px;
+    width: 100px;
+    font-family: 'Kotta One';
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 30px;
+    color: #F1F0EE;
+    background-color: #649552;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+   
+}
+
+.botao:hover {
+    margin-left: 10px;
+    font-family: 'Kotta One';
+    size: 16px;
+    transition: 1s;
+    color: #F1F0EE;
+    background-color: #82bf6c;
+    text-decoration: none;
+}
 
 /* Estilo Rodapé */
 footer {

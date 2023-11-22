@@ -1,6 +1,27 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&family=Kotta+One&display=swap');
+*{
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-family: 'Kotta One', sans-serif;
     margin: 0;
-    padding: 0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #F2EFEF;
+    height: 100vh;
+    width: 100vw;
+}
+.main-div-config img{
+	width: 250px;
+	height: 300px;
+}
+.centralizar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Propriedades para definirem o posicionamento dos itens do cabeçalho */
@@ -85,110 +106,108 @@ nav a {
 }
 
 /* Fim Estilo para o cabeçalho */
-body {
-    background-color: #628C4F;
+/*
+main{
+    padding-left: 40px;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
 }
-
-/* Estilo para as colunas de anuncio */
-.container-controlador {
+.main-div-config{
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin: 5px 5px 0 0;
-    width: 100%;
-    background-color: #fff;
-}
-
-.form {
-    display: flex;
-    width: 75%;
-    padding: 10px;
-    border-radius: 15px;
-    margin: 5.5px;
-    color: #222222;
-    background-color: #F1F0EE;
-    margin: 0 0 0 200px;
-}
-
-.form p {
-    font-size: 20px;
-}
-
-#btn-comprar-agora {
-    width: 100%;
-
-}
-
-/* Estilo quem somos; politica de priv; termos de uso; trabalhe conosco */
-#quem-somos {
-    padding: 15px;
-}
-
-#quem-somos h1 {
-    font-size: 28px;
-    margin: 25px;
-    color: #628C4F;
-    text-align: center;
-}
-
-#quem-somos h2 {
-    color: #628C4F;
-    padding: 10px;
-    text-align: center;
-}
-
-#quem-somos h3 {
-    margin: 25px;
-    color: #82bf6c;
-    text-align: center;
-}
-#quem-somos h4 {
-    display: block;
-    margin: 25px;
-    color: #82bf6c;
-}
-#quem-somos p {
-    font-size: 20px;
-    display: block;
-    margin: 25px;
-}
-
-#btn-retornar-quem-somos {
-    margin: 10px;
-    border: none;
-}
-
-#btn-retornar-quem-somos a {
-    color: #F1F0EE;
-    background-color: #649552;
-    padding: 5px;
-    font-size: 25px;
-    line-height: none !important;
-
-}
-
-.trabalhe-conosco {
-    display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
-
-
+    flex-direction: column;
+    gap: 20px;
+}*/
+.main-div-config-a{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    gap: 5px;
+}
+.main-div-config-a a{
+    color: #000;
+    font-family:'Khula';
+    font-size: 20px;
+    font-weight: 600;
+}
+.main-div-dados{
+    padding-top: 20px;
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.main-div-dados h2{
+    padding-top: 10px;
+    color: #000;
+    font-family: 'Khula';
+    font-size: 20px;
+    font-weight: 600;
+}
+.Email{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.genero{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#email-pedro{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+textarea{
+    width: 300px;
+    height: 150px;
+    background: transparent;
+    border: 2px solid #000;
+}
+.desativar-conta{
+    width: 310px;
+height: 50px;
+background-color: #fff;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+.desativar-conta div a {
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.desativar-conta div h5 {
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+}
+#desativar{
+    color: #649552;
+font-size: 12px;
+text-align: center;
+padding-top: 10px;
 }
 
-.trabalhe-conosco input {
-    margin: 10px;
-    width: 500px;
-    border: 1px solid #fd8a24;
-
+.a-preto:hover{
+    text-decoration: underline;
 }
-
-#sobre-voce {
-    height: 250px;
-}
-
-#btn-enviar-banco {
-    width: 95%;
-    margin: 10px;
+.a-verde:hover{
+    text-decoration: underline;
+    text-decoration-color: #649552;
 }
 
 /* Estilo Rodapé */
@@ -243,11 +262,3 @@ footer {
 }
 
 /*Fim Estilo Rodapé */
-
-
-
-.centralizar{
-    display: flex;
-    justify-content: center;
-
-}

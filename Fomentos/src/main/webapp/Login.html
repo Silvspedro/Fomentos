@@ -2,20 +2,25 @@
 <html lang="pt-br">
 
 <head>
-
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/style-pagamento.css">
+
+	<title>Tela de Login</title>
+
+	<link rel="stylesheet" href="css/tela-de-login.css">
+
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="website icon" type="jpg" href="imgs/logofomentos.jpg">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<link rel="stylesheet" href="css/style-pagamento.css">
-	<link rel="shortcut icon" href="imgs/logofomentos.jpg" type="image/jpg">
-	<title>Pagamento confirmado</title>
+
+
 </head>
 
 <body>
-	<!-- Cabeçalho superior -->
+
 	<header>
 		<!-- Conteúdo do cabeçalho -->
 		<a href="pagina_inicial.html"><img src="imgs/logofomentos.jpg" alt=""></a>
@@ -33,30 +38,43 @@
 		</nav>
 	</header>
 
-	<main>
+	<div class="box">
 
-		<div class="container-controlador" id="controle-login">
-			<div class="form">
-				<div class="trabalhe-conosco">
-					<div>
-						<h1 id="confirmado">Pagamento efetuado com<br> Sucesso</h1>
 
-						<img src="imgs/green-check-pagamento.png" class="check-pagamento" alt="Pagamento confimado">
-						<form>
-							<button action="pagina_inicial.html" type="submit" class="btn-comum"
-								id="btn-enviar-banco">Feedback</button>
-						</form>
-						<form>
-							<button action="Feedback.html" type="submit" class="btn-comum"
-								id="btn-enviar-banco">Retornar a Pagina inicial</button>
-						</form>
-					</div>
-				</div>
+		<img src="imgs/logofomentos.jpg" width="100" height="90" style="border-radius: 20px;"
+			alt="Imagem nao encontrada">
+		<br><br><br>
+		<form action="Logar" method="get">
+			<div class="inputBox">
+				<input type="text" name="email" id="email" class="inputUser" required>
+				<label for="email" class="labelInput"> Email: </label>
 			</div>
-		</div>
+			<br>
+			<div class="inputBox">
+				<input type="password" name="senha" id="senha" class="inputUser" required>
+				<label for="senha" class="labelInput"> Senha: </label>
+			</div>
+			<p>
 
-		</selection>
-	</main>
+			</p>
+			<div class="link">
+				<a href="#">Esqueceu sua senha? </a>
+			</div>
+			<br>
+
+			<div class="g-recaptcha" data-sitekey="your_site_key"> </div>
+
+			<br><br><br><br>
+
+			<input type="submit" name="submit" id="submit" value="Entrar">
+		</form>
+		<div class="link">
+			<p> Não tem uma conta? <a href="Cadastro.html">Cadastre-se</a></p>
+		</div>
+	</div>
+
+
+
 	<footer>
 
 		<div class="logo-rodape">
@@ -80,7 +98,6 @@
 				<a href="Trabalhe-conosco.html">
 					<li>Trabalhe Conosco</li>
 				</a>
-				</a>
 			</ul>
 
 		</div>
@@ -90,12 +107,16 @@
 
 			<p>FOMENTOS LTDA | CNPJ: 00.001.987/0006-54 </p>
 
-			<P>SIGA Área Especial para Indústria Lote 2/3, Sce St. Leste Industrial - Gama, Brasília - DF, CEP 72445-020
+			<P>SIGA Área Especial para Indústria Lote 2/3, Sce St. Leste Industrial - Gama, Brasília - DF, CEP
+				72445-020
 			</p>
 
 			<P>Copyright © 2023 Fomentos. Todos os direitos reservados</p>
 		</div>
 	</footer>
+
+
+
 </body>
 
 </html>

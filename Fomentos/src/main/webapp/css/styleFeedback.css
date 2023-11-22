@@ -1,79 +1,65 @@
-.container {
-    max-width: auto;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: 'Times New Roman', Times, serif;
+.quadro{
+    margin-top: 30px;
+    width: 780px;
+    height: 520px;
+    border-radius: 15px;
+    background: #E4E3E3;
 }
 
-.favorite {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-    border: solid 1px #D2CFCF;
-    border-right: 0px;
-    border-left: 0px;
-    padding: 1rem;
-    justify-content: space-between;
-}
-
-.a24{
-    font-family: Kotta One; 
-    font-size: 24px;
-}
-
-.a32{
-    font-family: Koulen; 
-    font-size: 32px;
-}
-
-.a16{
-    font-family: Kotta One; 
-    font-size: 16px;
-}
-
-.flexrow{
-    display: flex; 
-    flex-direction: row;
-}
-
-.flexcolumn{
-    display: flex; 
-    flex-direction: column;
-}
-
-.ordem{
-    display: flex; 
-    justify-content: space-between;
-}
-
-.produtos{
-    width: 188px; 
-    height: 143px;
-    margin-right: 1rem;
-}
-
-.favoriteImg{
-    margin-right:1rem;
-}
-
-#lixeira{
-    outline: none;
-    border: none;
+.submitQuadro{
+    margin-top: 25px;
+    width: 180px;
+    height: 44px;
+    border-radius: 20px;
+    background: #649552;
+    border:none;
     cursor: pointer;
 }
 
-.favorite a {
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+.imgQuadro{
+    margin-top: 20px;
 }
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #F1F0EE;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+body{
+    background: white;
 }
+
+.quadroBranco{
+    width: 643px;
+    height: 158px;
+    border-radius: 30px;
+    background: #FEFEFE;
+}
+
+.textoQuadro{
+    margin-top: 35px; 
+    width: 593px;
+    height: 118px;
+    color: #000;
+    text-align: center;
+    font-family: Khula;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.textoQuadroBranco{
+    display: flex;
+    width: 593px;
+    height: 131px;
+    color: #000;
+    font-family: Khula;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
+/*CSS PARA HEADER E BODY*/
 
 
 /* Propriedades para definirem o posicionamento dos itens do cabeçalho */
@@ -161,7 +147,7 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
-.p{
+p{
     font-size: 24px; 
     font-family: Kotta One;
 }

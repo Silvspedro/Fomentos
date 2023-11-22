@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carrinho</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Khula&family=Kotta+One&family=Koulen&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="css/stylesCarrinho.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+	<link rel="website icon" type="jpg" href="imgs/fomentos 12.png">
+	<script src="js/carrinho.js"></script>
+</head>
+
+
+
+<header class="alinhamentoCabeçalho">
+	<!-- Conteúdo do cabeçalho -->
+	<a href="pagina_inicial.html"><img src="imgs/logofomentos.jpg" alt=""></a>
+	<h1 class="fomentos">FOMENTOS</h1>
+	<nav class="barradenavegacao">
+		<ul class="lista">
+			<li><a href="Carrinho.html"><button>Carrinho</button></a></li>
+			<li><a href="Add-anuncio.html"><button>Inserir anúncio</button></a></li>
+			<li><a href="Cadastro.html"><button>Cadastrar</button></a></li>
+			<li><a href="Login.html"><button>Entrar</button></a></li>
+			<li><a href="Perfil.html"><button>Perfil</button></a></li>
+			<li><a href="Favoritos.html"><button>Favoritos</button></a></li>
+		</ul>
+	</nav>
+</header>
+
+<body>
+
+	<section class="h-100 h-custom">
+
+		<div class="container py-5 h-100">
+			<div class="flexrow">
+				<h2><a href="#"><i class=" bi bi-cart4 carrinho"></i></a></h2>
+				<h2 class="fw-normal mb-0 carrinhoTexto">Carrinho de compras</h2>
+				<a href="#" class="limparCarrinho">Limpar carrinho</a>
+			</div>
+
+			<div class="row d-flex justify-content-center align-items-center h-100">
+				<div class="col">
+					<div class="card">
+						<div class="card-body p-4">
+							<p class="fw-normal mb-0" class="descricao">Descrição</p>
+							<div class="card mb-3">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div class="d-flex flex-row align-items-center">
+											<div>
+												<img src="imgs/tomate.png" class="img-fluid rounded-3 produto"
+													alt="Shopping item">
+											</div>
+											<div class="ms-3">
+												<h5>Tomate </h5>
+												<p class="small mb-0"> 2,99KG
+												<p class="small mb-0"> Em estoque
+											</div>
+										</div>
+										<div class="d-flex flex-row align-items-center">
+											<div class="separacao">
+												<p class="small mb-0">Qntd
+												<div class="flexrow">
+													<a href="#" class="bi bi-arrow-up-circle"></a>
+													<h5 class="fw-normal mb-0">1</h5>
+													<a href="#" class="bi bi-arrow-down-circle"></a>
+												</div>
+											</div>
+											<div class="separacao">
+												<p class="small mb-0">preco
+												<h5 class="fw-normal mb-0">2,99</h5>
+											</div>
+											<div class="separacaosubtotal">
+												<p class="small mb-0">sub total
+												<h5 class="mb-0">2,99</h5>
+											</div>
+											<button id="lixeira" onclick="apagar(0)"><i
+													class="bi bi-trash lixeira"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card mb-3">
+								<div class="card-body">
+									<div class="d-flex justify-content-between">
+										<div class="d-flex flex-row align-items-center">
+											<div>
+												<img src="imgs/alface.png" class="img-fluid rounded-3 produto"
+													alt="Shopping item">
+											</div>
+
+											<div class="ms-3">
+												<h5>Alface americano</h5>
+												<p class="small mb-0">0,99KG
+												<p class="small mb-0">Pronta entrega
+											</div>
+										</div>
+
+										<div class="d-flex flex-row align-items-center">
+
+											<div class="separacao">
+												<p class="small mb-0">Qntd
+												<div class="flexrow">
+													<a href="#" class="bi bi-arrow-up-circle"></a>
+													<h5 class="fw-normal mb-0">2</h5>
+													<a href="#" class="bi bi-arrow-down-circle"></a>
+												</div>
+											</div>
+
+											<div class="separacao">
+												<p class="small mb-0">preco
+												<h5 class="fw-normal mb-0">0,99</h5>
+											</div>
+
+											<div class="separacaosubtotal">
+												<p class="small mb-0">sub total
+												<h5 class="mb-0">1,89</h5>
+
+											</div>
+
+											<button id="lixeira" onclick="apagar(1)"><i
+													class="bi bi-trash lixeira"></i></button>
+										</div>
+									</div>
+								</div>
+							</div>
+							</form>
+
+							<hr class="my-4">
+							<div class="d-flex flexend">
+								<p class="mb-2 subtotal">
+									Subtotal</p>
+								<p class="mb-2 subtotal">R$
+									4,88</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="flexend">
+				<a href="Pagamentos.html"><button type="button" class="btn btn botaoFinalizar">Finalizar
+						compra</button></a>
+			</div>
+		</div>
+
+
+	</section>
+</body>
+
+<footer>
+
+	<div class="logo-rodape">
+		<a href="Pagina-inicial.html">
+			<img src="img/logo2-preto.jpg" alt="">
+		</a>
+	</div>
+	<div class="menu-rodape">
+
+		<ul class="lista-rodape">
+
+			<a href="Quem-somos.html">
+				<li>Quem somos</li>
+			</a>
+			<a href="Politicas-pricacidade.html">
+				<li>Política de privacidade</li>
+			</a>
+			<a href="Termos-uso.html">
+				<li>Termos de uso</li>
+			</a>
+
+			<a href="Trabalhe-conosco.html">
+				<li>Trabalhe Conosco</li>
+			</a>
+		</ul>
+
+	</div>
+	<div class="informacoes-finais">
+
+		<!--  <img src="img/meios-pagamento-rodape-sem-fundo.png" alt="Meios de pagamento aceitos pelo site"> -->
+
+		<p>FOMENTOS LTDA | CNPJ: 00.001.987/0006-54 </p>
+
+		<P>SIGA Área Especial para Indústria Lote 2/3, Sce St. Leste Industrial - Gama, Brasília - DF, CEP 72445-020
+		</p>
+
+		<P>Copyright © 2023 Fomentos. Todos os direitos reservados</p>
+	</div>
+</footer>
+
+</html>
